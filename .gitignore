@@ -1,2 +1,12 @@
-./docs/*
-!./docs/public
+# 忽略 docs 目录下所有文件
+/docs/*
+
+# 忽略 docs 目录下所有的子目录（但不包括它们的内容）
+# 并且确保这些子目录本身被忽略
+/docs/*/
+
+# 排除 docs/public/ 文件夹本身
+!/docs/public/
+
+# 排除 docs/public/ 文件夹内的所有文件和子文件夹
+!/docs/public/**
